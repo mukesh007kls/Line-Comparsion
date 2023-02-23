@@ -1,10 +1,10 @@
 public class Main {
-    public static final int X1 = 0;
+    public static final int X1 = 3;
     public static final int Y1 = 10;
-    public static final int X2 = 1;
-    public static final int Y2 = 6;
-    public static final int X3=2;
-    public static final int Y3=5;
+    public static final int X2 = 3;
+    public static final int Y2 = 9;
+    public static final int X3=3;
+    public static final int Y3=7;
 
     public static void main(String[] args) {
         System.out.println("Welcome to Line Comparsion Program");
@@ -15,12 +15,18 @@ public class Main {
         secondLineLength=Math.sqrt(((X1 - X3) * (X1 - X3)) + ((Y1 - Y3) * (Y1 - Y3)));
         Double a=new Double(firstLineLength);
         Double b=new Double(secondLineLength);
-        if (a>b){
-            System.out.println("Length of First line is greater:-"+firstLineLength+" "+secondLineLength);
-        }else if(a<b){
-            System.out.println("Length of second line is greater:-"+firstLineLength+" "+secondLineLength);
-        }else{
-            System.out.println("Both the lengths are equal:-"+firstLineLength+" "+secondLineLength);
+        System.out.println(firstLineLength+" "+secondLineLength);
+        int choice=a.compareTo(b);
+        switch (choice){
+            default:
+                System.out.println("Equal");
+                break;
+            case 1:
+                System.out.println("First line greater");
+                break;
+            case -1:
+                System.out.println("Second line is greater");
+                break;
         }
     }
 }
