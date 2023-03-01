@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class Line_Computation {
+public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome to Line Comparsion Program");
         System.out.println("First line:-");
-        Line_Computation lc1=new Line_Computation();
+        Main lc1=new Main();
         double firstLineLength = lc1.length_Of_Line();
 
         System.out.println("Second line:-");
-        Line_Computation lc2=new Line_Computation();
+        Main lc2=new Main();
         double secondLineLength= lc2.length_Of_Line();
 
         Double a=new Double(firstLineLength);
